@@ -3,3 +3,6 @@ new fullpage('#fullPage', {
 
 	
 })
+
+
+const progress = document.querySelector('.progress__bar');
