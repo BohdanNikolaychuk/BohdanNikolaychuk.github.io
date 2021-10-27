@@ -196,9 +196,3 @@ body {
 .form {
   display: flex;
 }
-
-.fp-top {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-}
