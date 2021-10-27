@@ -1,0 +1,204 @@
+:root {
+  --purple: #682ae9;
+  --white: #dbdbdb;
+  --title: 3rem;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  text-decoration: none;
+}
+
+body {
+  color: #ffffff;
+  font-family: "Roboto Mono", monospace;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*+______Header______*/
+.header {
+  height: 100vh;
+  background-color: black;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+}
+
+.header__logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--purple);
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__nav > ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__nav > ul > li {
+  margin-left: 1rem;
+}
+
+.link {
+  color: var(--white);
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  transition: color 0.4s ease-out;
+  line-height: 1;
+}
+.link__social {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  transition: color 0.4s ease-out;
+  line-height: 1;
+}
+
+.arrow__btm {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+}
+.arrow {
+  padding-left: 50px;
+  transform: rotate(90deg);
+}
+
+.link:hover {
+  color: var(--purple);
+}
+
+.link__social:hover {
+  color: var(--white);
+}
+
+/* MAIN */
+
+.main {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: (-50%, -20%);
+}
+
+.main__title {
+  font-size: 3rem;
+
+  padding-bottom: 30px;
+}
+
+.main__title span {
+  color: var(--purple);
+}
+.main__text {
+  font-size: 1.5rem;
+  margin-bottom: 35px;
+}
+
+.main__btn {
+  background-color: transparent;
+  border: 3px solid var(--purple);
+  padding: 10px 40px;
+  border-radius: 30px;
+  color: var(--white);
+  font-size: 1.5rem;
+  z-index: 2;
+}
+
+/* project */
+
+.project {
+  height: 100vh;
+  background-color: black;
+}
+
+.projetct__title {
+  font-size: var(--title);
+  padding-bottom: 50px;
+}
+
+.project__item1 {
+  background-color: white;
+}
+.project__item2 {
+  background-color: rgb(138, 60, 60);
+}
+.project__item3 {
+  background-color: rgb(20, 5, 5);
+}
+.project__item4 {
+  background-color: rgb(138, 60, 60);
+}
+
+/* SKILLS */
+
+.skill {
+  background-color: black;
+  height: 100vh;
+}
+
+.skill__title {
+  padding-top: 50px;
+  font-size: var(--title);
+}
+
+/* About */
+.about {
+  background-color: black;
+}
+
+.about__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--purple);
+  font-size: var(--title);
+}
+
+/* CONTACT */
+
+.contact {
+  padding-top: 200px;
+  background-color: black;
+  height: 100vh;
+}
+.contact__title {
+  font-size: var(--title);
+}
+
+.form {
+  display: flex;
+}
+
+.fp-top {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
