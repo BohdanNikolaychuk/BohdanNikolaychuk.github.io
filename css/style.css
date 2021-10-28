@@ -184,7 +184,7 @@ body {
 
 .progress {
   width: 100%;
-  background-color: #ffffff;
+  background-color: var(--white);
   border-radius: 50px;
 }
 .progress__bar {
