@@ -80,6 +80,9 @@ body {
   transition: color 0.4s ease-out;
   line-height: 1;
 }
+.arrow__text {
+  padding-bottom: 20px;
+}
 
 .arrow__btm {
   position: absolute;
@@ -87,8 +90,10 @@ body {
   bottom: 10%;
 }
 .arrow {
+  height: 45px;
+  width: 45px;
   position: absolute;
-  background: var(--purple);
+  left: 35%;
 }
 
 .link:hover {
@@ -143,6 +148,10 @@ body {
 .projetct__title {
   font-size: var(--title);
   padding-bottom: 50px;
+}
+
+.project__items {
+  columns: 3 auto;
 }
 
 .project__item1 {
@@ -218,5 +227,27 @@ body {
 }
 
 .form {
-  display: flex;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 10px;
+}
+
+.form__text {
+  display: block;
+  width: 100%;
+  margin: 25px 0;
+  border: none;
+  background: var(--purple);
+  backface-visibility: visible;
+  padding: 20px 40px;
+  outline: none;
+  color: #000;
+  transition: 0.5s;
+  border-radius: 20px;
+}
+
+textarea.form__text {
+  resize: none;
+  height: 150px;
 }
