@@ -30,6 +30,7 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 /*+______Header______*/
@@ -79,9 +80,6 @@ body {
   align-items: center;
   transition: color 0.4s ease-out;
   line-height: 1;
-}
-.arrow__text {
-  padding-bottom: 20px;
 }
 
 .arrow__btm {
@@ -151,20 +149,27 @@ body {
 }
 
 .project__items {
-  columns: 3 auto;
+  overflow-y: scroll;
+  height: 70vh;
+  width: 100%;
 }
 
-.project__item1 {
-  background-color: white;
+.project__item {
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  height: 300px;
 }
-.project__item2 {
-  background-color: rgb(138, 60, 60);
+.project__item:hover {
+  opacity: 1;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
-.project__item3 {
-  background-color: rgb(20, 5, 5);
+.project__item-img {
+  max-width: 100%;
+  height: auto;
 }
-.project__item4 {
-  background-color: rgb(138, 60, 60);
+.hover__effect:hover {
+  background-color: var(--purple);
 }
 
 /* SKILLS */
@@ -238,11 +243,11 @@ body {
   width: 100%;
   margin: 25px 0;
   border: none;
-  background: var(--purple);
-  backface-visibility: visible;
+  background: #662ae9a9;
+
   padding: 20px 40px;
   outline: none;
-  color: #000;
+  color: rgb(0, 0, 0);
   transition: 0.5s;
   border-radius: 20px;
 }

@@ -1,8 +1,21 @@
 new fullpage('#fullPage', {
 	autoScrolling: true,
 
+
 	
 })
 
+document.addEventListener('DOMContentLoaded', function () {
+	const form = document.querySelector('.form')
+	form.addEventListener('submit', formSend);
 
-const progress = document.querySelector('.progress__bar');
+	async function formSend(e) {
+		e.preventDefault();
+		let formData = new FormData(form)
+	
+
+	}
+
+
+
+});
