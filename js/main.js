@@ -1,6 +1,6 @@
 new fullpage('#fullPage', {
 	autoScrolling: true,
-
+	scrollHorizontally: true
 
 	
 })
