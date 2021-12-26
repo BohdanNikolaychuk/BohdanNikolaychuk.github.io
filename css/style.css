@@ -24,9 +24,10 @@ li {
 }
 
 body {
-  color: #ffffff;
   font-family: "Roboto Mono", monospace;
+  color: var(--white);
 }
+
 .title {
   padding: 3rem 0;
 }
@@ -39,15 +40,18 @@ body {
 
 /*+______Header______*/
 .header {
-  height: 100vh;
-  background-color: black;
+  padding-top: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
 }
 
 .header__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 5rem;
 }
 
 .header__logo {
@@ -85,19 +89,6 @@ body {
   transition: color 0.4s ease-out;
   line-height: 1;
 }
-
-.arrow__btm {
-  position: absolute;
-  left: 50%;
-  bottom: 10%;
-}
-.arrow {
-  height: 45px;
-  width: 45px;
-  position: absolute;
-  left: 35%;
-}
-
 .link:hover {
   color: var(--purple);
 }
@@ -109,10 +100,16 @@ body {
 /* MAIN */
 
 .main {
-  position: absolute;
-  top: 50%;
-  left: 20%;
-  transform: (-50%, -20%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+.main__inner {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .main__title {
@@ -140,110 +137,8 @@ body {
   cursor: pointer;
 }
 
-/* project */
+/* PRoject */
 
 .project {
   height: 100vh;
-  background-color: black;
-}
-
-.projetct__title {
-  font-size: var(--title);
-  padding-bottom: 50px;
-}
-
-.project__item:hover {
-  opacity: 1;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-}
-.project__item-img {
-  max-width: 100%;
-  height: auto;
-}
-.hover__effect:hover {
-  background-color: var(--purple);
-}
-
-/* SKILLS */
-
-.skill {
-  background-color: black;
-  height: 100vh;
-}
-
-.skill__title {
-  padding-top: 50px;
-  font-size: var(--title);
-  padding-bottom: 4rem;
-}
-
-.container__litle {
-  max-width: 600px;
-  margin: 0 auto;
-  height: 400px;
-}
-.skill__title-text {
-  padding-bottom: 2rem;
-  text-align: center;
-  font-size: 2rem;
-}
-
-.progress {
-  width: 100%;
-  background-color: var(--white);
-  border-radius: 50px;
-}
-.progress__bar {
-  width: 70%;
-  border-radius: 50px;
-  height: 20px;
-  background-color: var(--purple);
-}
-/* About */
-.about {
-  background-color: black;
-}
-
-.about__text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--purple);
-  font-size: var(--title);
-}
-
-/* CONTACT */
-
-.contact {
-  background-color: black;
-  height: 100vh;
-}
-.contact__title {
-  font-size: var(--title);
-}
-
-.form {
-  max-width: 600px;
-  margin: 0 auto;
-  overflow: hidden;
-  padding: 0 10px;
-}
-
-.form__text {
-  display: block;
-  width: 100%;
-  margin: 25px 0;
-  border: none;
-  background: #662ae9a9;
-
-  padding: 20px 40px;
-  outline: none;
-  color: rgb(0, 0, 0);
-  transition: 0.5s;
-  border-radius: 20px;
-}
-
-textarea.form__text {
-  resize: none;
-  height: 150px;
 }
