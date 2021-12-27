@@ -128,8 +128,39 @@ body {
   border-radius: 30px;
   color: var(--white);
   font-size: 1.5rem;
-  z-index: 123123122;
   cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.main__btn:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 30px;
+  height: 100%;
+  z-index: -2;
+}
+.main__btn:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 30px;
+  width: 0%;
+  height: 100%;
+  background-color: var(--purple);
+  transition: all 0.3s;
+
+  z-index: -1;
+}
+
+.main__btn:hover:before {
+  width: 100%;
 }
 
 /* PRoject */
