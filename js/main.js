@@ -1,4 +1,7 @@
-new fullpage('#fullPage', {
 
-})
+new fullpage('#fullpage', {
+	//options here
+	autoScrolling:true,
 
+	
+});

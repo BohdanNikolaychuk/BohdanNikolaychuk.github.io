@@ -60,14 +60,10 @@ body {
   color: var(--purple);
 }
 
-.header__nav {
-  display: flex;
-  justify-content: space-between;
-}
-
 .header__nav > ul {
   display: flex;
   justify-content: space-between;
+  float: left;
 }
 
 .header__nav > ul > li {
@@ -114,8 +110,7 @@ body {
 
 .main__title {
   font-size: 3rem;
-
-  padding-bottom: 30px;
+  padding-bottom: 1px;
 }
 
 .purpe__span {
@@ -123,7 +118,7 @@ body {
 }
 .main__text {
   font-size: 1.5rem;
-  margin-bottom: 35px;
+  padding-bottom: 55px;
 }
 
 .main__btn {
@@ -133,7 +128,7 @@ body {
   border-radius: 30px;
   color: var(--white);
   font-size: 1.5rem;
-  z-index: 2;
+  z-index: 123123122;
   cursor: pointer;
 }
 
@@ -141,4 +136,10 @@ body {
 
 .project {
   height: 100vh;
+  background-color: black;
+}
+
+.project__title {
+  font-size: 3rem;
+  padding-top: 30px;
 }
