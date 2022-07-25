@@ -1,7 +1,12 @@
 import gulp from 'gulp' // Основной модуль
 import { path } from './gulp/config/path.js' // Импорт путей
 import { plugins } from './gulp/config/plugins.js' // Импорт общих плагинов
+import deploy from 'gulp-gh-pages'
 
+gulp.task('deploy', function () {
+  return gulp.src("./dist/**/*")
+    .pipe(deploy())
+});
 // Передаем значения в глобальную переменную
 global.app = {
   isBuild: process.argv.includes('--build'),
