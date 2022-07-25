@@ -1,0 +1,339 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #662ae980;
+  border-radius: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  padding-top: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #682ae9;
+}
+.header__nav > ul {
+  display: flex;
+  justify-content: space-between;
+  float: left;
+}
+.header__nav > ul > li {
+  margin-left: 1rem;
+}
+.header .link {
+  color: #dbdbdb;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  transition: color 0.4s ease-out;
+  line-height: 1;
+}
+.header .link__social {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  transition: color 0.4s ease-out;
+  line-height: 1;
+}
+.header .link:hover {
+  color: #682ae9;
+}
+.header .link__social:hover {
+  color: #dbdbdb;
+}
+
+body {
+  background-color: black;
+  color: #dbdbdb;
+  font-family: "Roboto Mono", monospace;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+.main__inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.main__title {
+  font-size: 3rem;
+  padding-bottom: 1px;
+}
+.main .purpe__span {
+  color: #682ae9;
+}
+.main__text {
+  font-size: 1.5rem;
+  padding-bottom: 55px;
+}
+.main__btn {
+  background-color: transparent;
+  border: 3px solid #682ae9;
+  padding: 10px 40px;
+  border-radius: 40px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.2s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.main__btn:after, .main__btn:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 30px;
+  height: 100%;
+}
+.main__btn:after {
+  width: 100%;
+  z-index: -2;
+}
+.main__btn:before {
+  width: 0%;
+  background-color: #682ae9;
+  transition: 0.3s;
+  z-index: -1;
+}
+.main__btn:hover {
+  background-color: #682ae9;
+}
+
+.project {
+  height: 100vh;
+  background-color: #000;
+}
+
+.project__title {
+  font-size: 3rem;
+  padding-top: 30px;
+}
+
+.project__items {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  text-align: center;
+}

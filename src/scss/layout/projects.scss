@@ -1,0 +1,17 @@
+.project {
+    height: 100vh;
+    background-color: #000;
+}
+.project__title {
+    font-size: 3rem;
+    padding-top: 30px;
+}
+.project__items {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    text-align: center;
+}

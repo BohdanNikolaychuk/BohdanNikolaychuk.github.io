@@ -1,0 +1,56 @@
+.header {
+	padding-top: 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		font-size: 1.5rem;
+		font-weight: 700;
+		color: $purple;
+	}
+
+	&__nav>ul {
+		display: flex;
+		justify-content: space-between;
+		float: left;
+	}
+
+	&__nav>ul>li {
+		margin-left: 1rem;
+	}
+
+	.link {
+		color: $white;
+		height: 2rem;
+		display: flex;
+		align-items: center;
+		transition: color 0.4s ease-out;
+		line-height: 1;
+
+		&__social {
+			height: 2rem;
+			display: flex;
+			align-items: center;
+			transition: color 0.4s ease-out;
+			line-height: 1;
+		}
+
+		&:hover {
+			color: $purple;
+		}
+
+		&__social:hover {
+			color: $white;
+		}
+	}
+}
