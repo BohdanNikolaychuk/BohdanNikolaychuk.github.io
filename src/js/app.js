@@ -1,3 +1,7 @@
-import main from './main.js'
+import main from './main.js';
+import scrolling from './scroll.js';
 
-window.onscroll = function() {main()};
+scrolling();
+window.onscroll = function () {
+  main();
+};

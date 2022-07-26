@@ -120,7 +120,6 @@ a {
 }
 
 /* change colours to suit your needs */
-
 ins {
   background-color: #ff9;
   color: #000;
@@ -128,7 +127,6 @@ ins {
 }
 
 /* change colours to suit your needs */
-
 mark {
   background-color: #ff9;
   color: #000;
@@ -152,7 +150,6 @@ table {
 }
 
 /* change border colour to suit your needs */
-
 hr {
   display: block;
   height: 1px;
@@ -168,15 +165,13 @@ select {
 }
 
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::after,
 *::before {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 a {
@@ -214,72 +209,42 @@ li {
   right: 0;
   z-index: 100;
 }
-
 .header__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .header__logo {
   font-size: 1.5rem;
   font-weight: 700;
   color: #682ae9;
 }
-
 .header__nav > ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   float: left;
 }
-
 .header__nav > ul > li {
   margin-left: 1rem;
 }
-
 .header .link {
   color: #dbdbdb;
   height: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: color 0.4s ease-out;
-  -o-transition: color 0.4s ease-out;
+  align-items: center;
   transition: color 0.4s ease-out;
   line-height: 1;
 }
-
 .header .link__social {
   height: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: color 0.4s ease-out;
-  -o-transition: color 0.4s ease-out;
+  align-items: center;
   transition: color 0.4s ease-out;
   line-height: 1;
 }
-
 .header .link:hover {
   color: #682ae9;
 }
-
 .header .link__social:hover {
   color: #dbdbdb;
 }
@@ -297,40 +262,28 @@ body {
 }
 
 .main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   height: 100vh;
   width: 100%;
   background-color: black;
 }
-
 .main__inner {
   max-width: 800px;
   margin: 0 auto;
 }
-
 .main__title {
   font-size: 3rem;
   padding-bottom: 1px;
 }
-
 .main .purpe__span {
   color: #682ae9;
 }
-
 .main__text {
   font-size: 1.5rem;
   padding-bottom: 55px;
 }
-
 .main__btn {
   background-color: transparent;
   border: 3px solid #682ae9;
@@ -338,16 +291,12 @@ body {
   border-radius: 40px;
   font-size: 1.5rem;
   cursor: pointer;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
+  transition: 1s;
   position: relative;
   overflow: hidden;
   z-index: 1;
 }
-
-.main__btn:after,
-.main__btn:before {
+.main__btn:after, .main__btn:before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -355,23 +304,19 @@ body {
   border-radius: 30px;
   height: 100%;
 }
-
 .main__btn:after {
   width: 100%;
   z-index: -2;
 }
-
 .main__btn:before {
   width: 0%;
   background-color: #682ae9;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
   transition: 0.3s;
   z-index: -1;
 }
-
 .main__btn:hover {
   background-color: #682ae9;
+  color: #dbdbdb;
 }
 
 .project {
@@ -386,11 +331,8 @@ body {
 
 .project__items {
   padding-top: 50px;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (1fr)[3];
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
