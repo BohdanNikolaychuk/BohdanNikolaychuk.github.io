@@ -16,8 +16,6 @@ jobs:
         run: npm ci
       - name: build project
         run: npm run build
-      - name: Deploy
-        run: gulp deploy
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
