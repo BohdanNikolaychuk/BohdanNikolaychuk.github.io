@@ -338,9 +338,9 @@ body {
   border-radius: 40px;
   font-size: 1.5rem;
   cursor: pointer;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -372,6 +372,7 @@ body {
 
 .main__btn:hover {
   background-color: #682ae9;
+  color: #dbdbdb;
 }
 
 .project {
